@@ -1,21 +1,22 @@
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
-const IsOnline = styled.span`
+const Online = styled.button`
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin: 10px;
-  color:${props=>props.isOnline? 'green': 'red'};
+  border-color:black;
+  background-color:${props => props.isOnline = true? 'green': 'red'};
 `;
 
 
-function FriendsListItem({ avatar, name, id, isOnline }) {
+function FriendsListItem({ avatar, name,id, isOnline }) {
   return (
       <li key={id}>
-      <IsOnline>{isOnline }</IsOnline>
-  <img class="avatar" src={avatar} alt={name} width="48" />
-          <p class="name">{name}</p>
+      <Online>{isOnline}</Online>
+        <img src={avatar} alt={name} width="48" />
+          <p>{name}</p>
 </li>
   );
 }

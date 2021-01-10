@@ -3,16 +3,16 @@ import TransactionHistoryRow from './TransactionHistoryRow';
 
 function TransactionHistory({ items }) {
   return (
-    <table className>
-      <thead className>
+    <table>
+      <thead>
         <tr>
-          <th class>Type</th>
-          <th className>Amount</th>
-          <th className>Currency</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
         </tr>
       </thead>
 
-      <tbody className>{items.map(TransactionHistoryRow)}</tbody>
+      <tbody>{items.map(TransactionHistoryRow)}</tbody>
     </table>
   );
 }

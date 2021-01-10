@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 function TransactionHistoryRow({ id, type, amount, currency }) {
   return (
-    <tr key={id} className>
-      <td className>{type}</td>
-      <td className>{amount}</td>
-      <td className>{currency}</td>
+    <tr key={id}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
     </tr>
   );
 }

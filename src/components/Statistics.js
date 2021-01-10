@@ -40,14 +40,13 @@ function Statistics({ title, stats }) {
             {title && <Title>{title}</Title>}
 
             <StatList>
-                {stats.map(stat => {
-                    return (
-                        <StatItem key={stat.id}>
+                {stats.map(stat => 
+                    <StatItem key={stat.id}>
                             <Label>{stat.label}</Label>
                             <Percentage>{stat.percentage}%</Percentage>
                         </StatItem>
-                    );
-                })}
+                    
+                )}
             </StatList>
         </Section>
     );
