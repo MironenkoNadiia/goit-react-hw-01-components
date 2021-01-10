@@ -7,7 +7,7 @@ const Online = styled.button`
   border-radius: 50%;
   margin: 10px;
   border-color:black;
-  background-color:${props => props.isOnline = true? 'green': 'red'};
+  background-color:${props => props.children? 'green': 'red'};
 `;
 
 
