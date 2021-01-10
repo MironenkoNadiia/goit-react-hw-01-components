@@ -4,7 +4,7 @@ import styled from "styled-components";
 import FriendsListItem from './FriendListItem';
 
 const FriendItem = styled.ul`
-
+    list-style:none;
 `;
 
 function FriendList({ friends }) {
