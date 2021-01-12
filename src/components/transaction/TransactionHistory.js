@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import TransactionHistoryRow from './TransactionHistoryRow';
+import TransactionHistoryRow from '../transaction/TransactionHistoryRow';
 
 function TransactionHistory({ items }) {
   return (

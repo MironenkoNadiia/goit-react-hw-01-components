@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import FriendsListItem from './FriendListItem';
+import FriendsListItem from '../friends/FriendListItem';
 
 const FriendItem = styled.ul`
     list-style:none;
