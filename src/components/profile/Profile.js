@@ -52,10 +52,14 @@ function Profile({ name, tag, location, avatar, stats }) {
     return (
 <Section>
   <Description>
-    <Avatar>{avatar}</Avatar>
-    <Name>{name}</Name>
-    <p>{tag}</p>
-    <p>{location}</p>
+    <Avatar
+      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      alt="Аватар пользователя"
+      
+    />
+    <Name>Petra Marica</Name>
+    <p>@pmarica</p>
+    <p>Salvador, Brasil</p>
   </Description>
 
   <Stats>
@@ -85,7 +89,7 @@ Profile.propTypes = {
     followers: PropTypes.number,
     views: PropTypes.number,
     likes: PropTypes.number,
-  }).isRequired
+  }).isRequired,
 };
 
 export default Profile;
