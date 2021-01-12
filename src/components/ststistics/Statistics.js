@@ -53,7 +53,7 @@ function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   stats: PropTypes.array.isRequired,
 };
 

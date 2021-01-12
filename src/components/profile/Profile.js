@@ -52,14 +52,10 @@ function Profile({ name, tag, location, avatar, stats }) {
     return (
 <Section>
   <Description>
-    <Avatar
-      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
-      alt="Аватар пользователя"
-      
-    />
-    <Name>Petra Marica</Name>
-    <p>@pmarica</p>
-    <p>Salvador, Brasil</p>
+    <Avatar>{avatar}</Avatar>
+    <Name>{name}</Name>
+    <p>{tag}</p>
+    <p>{location}</p>
   </Description>
 
   <Stats>
@@ -81,15 +77,15 @@ function Profile({ name, tag, location, avatar, stats }) {
 }
 
 Profile.propTypes = {
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
     followers: PropTypes.number,
     views: PropTypes.number,
     likes: PropTypes.number,
-  }),
+  }).isRequired
 };
 
 export default Profile;
